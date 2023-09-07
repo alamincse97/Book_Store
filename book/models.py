@@ -15,5 +15,7 @@ class BookStoreModel(models.Model):
     book_name = models.CharField(max_length=30)
     author = models.CharField(max_length=30)
     category = models.CharField(max_length=30, choices=CATEGORY)
+    # django ekdom first date
     first_pub = models.DateTimeField(auto_now_add=True)
+    # erpor joto update korbo sei date dekhabe
     last_pub = models.DateTimeField(auto_now=True)
